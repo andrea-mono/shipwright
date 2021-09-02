@@ -70,6 +70,14 @@ module.exports = {
         'warning': '#FFC107',
         'info': '#0066DD',
       }
+    },
+    boxShadow: {
+      'light-01': '0 2px 4px rgba(105, 112, 117, .2)',
+      'light-02': '0 8px 16px rgba(18, 27, 33, .1)',
+      'light-03': '0 24px 128px rgba(18, 27, 33, .4)',
+      'dark-01': '0 2px 4px rgba(18, 27, 33, .4)',
+      'dark-02': '0 4px 32px rgba(18, 27, 33, .5)',
+      'dark-03': '0 24px 128px rgba(18, 27, 33, .9)',
     }
   },
   variants: {
