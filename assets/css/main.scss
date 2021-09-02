@@ -9,3 +9,7 @@
 @import "layers/objects/objects";
 @import "layers/components/components";
 @import "layers/trumps/trumps";
+
+button {
+  @apply bg-red-700 py-1 px-2
+}
