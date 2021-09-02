@@ -1,15 +1,13 @@
 <template>
-  <button type="button">Button</button>
+  <button type='button' class='font-sans'>yell</button>
 </template>
 
 <script>
 export default {
-  name: 'my-button',
+  name: 'Button',
 }
 </script>
 
 <style lang='scss' scoped>
-button {
 
-}
 </style>

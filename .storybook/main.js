@@ -19,7 +19,7 @@ module.exports = {
           loader: 'postcss-loader',
           options: {
             postcssOptions: {
-              plugins: [require('tailwindcss'), require('autoprefixer')],
+              plugins: [require('postcss-import'), require('tailwindcss/nesting'), require('tailwindcss'), require('autoprefixer')],
             },
           },
         },
