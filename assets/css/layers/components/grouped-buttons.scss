@@ -1,0 +1,11 @@
+.group {
+  @apply w-full border border-accents-01-active rounded-md overflow-hidden;
+
+  > .btn {
+    @apply min-w-100 rounded-none;
+  }
+
+  @media screen and (min-width: 768px) {
+    @apply min-w-300 w-min border border-accents-01-active rounded-md overflow-hidden flex;
+  }
+}

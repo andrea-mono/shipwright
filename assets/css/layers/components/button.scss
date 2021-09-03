@@ -1,4 +1,4 @@
-button {
+.btn {
   @apply text-sm text-01-component bg-accents-01-active py-2 px-6 rounded-sm flex items-center gap-x-2;
 
   &:hover {
@@ -11,7 +11,7 @@ button {
     @apply bg-accents-01-inactive cursor-default;
   }
 
-  &.button--secondary {
+  &--secondary {
     @apply text-accents-01-active bg-transparent border border-accents-01-active;
 
     &:hover {
@@ -24,7 +24,7 @@ button {
       @apply text-accents-01-inactive border-accents-01-inactive;
     }
   }
-  &.button--tertiary {
+  &--tertiary {
     @apply bg-transparent text-accents-01-active;
 
     &:hover {
@@ -37,7 +37,13 @@ button {
       @apply text-accents-01-inactive bg-transparent;
     }
   }
-  &.button--icon {
-      @apply p-2;
+  &--icon {
+    @apply p-2;
+  }
+  &--rounded {
+    @apply rounded-full;
+  }
+  &--scalable {
+    @apply w-full justify-center;
   }
 }

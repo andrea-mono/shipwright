@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "layers/settings/settings";
-@import "layers/tools/tools";
-@import "layers/generic/generic";
-@import "layers/elements/elements";
-@import "layers/objects/objects";
-@import "layers/components/components";
-@import "layers/trumps/trumps";
+@import "layers/settings/settings.scss";
+@import "layers/tools/tools.scss";
+@import "layers/generic/generic.scss";
+@import "layers/elements/elements.scss";
+@import "layers/objects/objects.scss";
+@import "layers/components/components.scss";
+@import "layers/trumps/trumps.scss";

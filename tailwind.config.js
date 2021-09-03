@@ -11,6 +11,10 @@ module.exports = {
     fontFamily: {
       'work-sans': ['"Work Sans"']
     },
+    minWidth: {
+      '100': '100px',
+      '300': '300px',
+    },
     backgroundColor: theme => ({
       transparent: 'transparent',
       light: {

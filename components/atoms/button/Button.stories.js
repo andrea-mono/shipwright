@@ -50,3 +50,9 @@ justIconRounded.args = {
   ...justIcon.args,
   circle: true,
 }
+
+export const Scalable = Template.bind({})
+Scalable.args = {
+  ...Primary.args,
+  scalable: true,
+}
