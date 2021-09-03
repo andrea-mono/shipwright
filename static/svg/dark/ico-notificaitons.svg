@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Dark / Large / ico-notificaitons">
+<path id="Union" d="M20 15L20 11C20 6.58172 16.4183 3 12 3C7.58175 3 4.00002 6.58172 4.00002 11L4 15L3 16V19H9.55001C9.78164 20.1411 10.7905 21 12 21C13.2095 21 14.2184 20.1411 14.45 19H21V16L20 15Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<rect id="Highlight" x="14" width="10" height="10" rx="5" fill="#0078CE"/>
+</g>
+</svg>

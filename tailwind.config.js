@@ -6,12 +6,13 @@ module.exports = {
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
   ],
-  darkMode: false,
+  darkMode: 'media',
   theme: {
     fontFamily: {
       'work-sans': ['"Work Sans"']
     },
     backgroundColor: theme => ({
+      transparent: 'transparent',
       light: {
         'primary': '#F8FAFB',
         '01-component': '#FFF',
@@ -33,6 +34,7 @@ module.exports = {
           inactive: 'rgba(109, 205, 216, .8)',
           active: '#31AAB7',
           hover: '#129AA6',
+          'hover-opacity-5': 'rgba(18, 154, 166, .05)',
           selected: '#21717A',
         },
         '02': {
@@ -50,6 +52,7 @@ module.exports = {
       }
     }),
     colors: {
+      '01-component': '#FFF',
       accents: {
         '01': {
           inactive: 'rgba(109, 205, 216, .8)',

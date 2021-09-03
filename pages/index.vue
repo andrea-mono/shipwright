@@ -1,10 +1,15 @@
 <template>
-  <MyButton label="button" />
+  <div>
+    <Icon name='ico-alert' />
+    <Button name='button' />
+  </div>
 </template>
 
 <script>
-import MyButton from '~/components/atoms/Button'
+import Icon from '~/components/atoms/icon/Icon'
+import Button from '~/components/atoms/Button'
+
 export default {
-  components: { MyButton }
+  components: { Button, Icon }
 }
 </script>
