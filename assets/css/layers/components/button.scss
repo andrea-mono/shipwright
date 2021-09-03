@@ -15,13 +15,13 @@
     @apply text-accents-01-active bg-transparent border border-accents-01-active;
 
     &:hover {
-      @apply text-accents-01-hover border-accents-01-hover;
+      @apply text-accents-01-hover bg-transparent border-accents-01-hover;
     }
     &:active {
-      @apply text-accents-01-selected border-accents-01-selected;
+      @apply text-accents-01-selected bg-transparent border-accents-01-selected;
     }
     &:disabled {
-      @apply text-accents-01-inactive border-accents-01-inactive;
+      @apply text-accents-01-inactive bg-transparent border-accents-01-inactive;
     }
   }
   &--tertiary {

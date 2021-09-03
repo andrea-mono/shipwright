@@ -1,0 +1,20 @@
+.figure {
+  &--sm {
+    @apply w-6 w-6;
+  }
+  &--md {
+    @apply w-8 h-8;
+  }
+  &--lg {
+    @apply w-24 h-24;
+  }
+  &--circle {
+    @apply rounded-full overflow-hidden;
+  }
+  &--rounded {
+    @apply rounded-2xl overflow-hidden;
+  }
+  &__img {
+    @apply w-full;
+  }
+}
