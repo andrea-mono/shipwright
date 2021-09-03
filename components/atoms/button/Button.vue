@@ -1,7 +1,7 @@
 <template>
-  <button type='button' :class='classes' :disabled='inactive'>
+  <button type='button' :class='classes' :disabled='inactive' @click='handleClick'>
     <Icon v-if='icon' :name='icon' :dark='!secondary && !tertiary' />
-    <span v-text='name'></span>
+    <span v-if='name' v-text='name'></span>
   </button>
 </template>
 
@@ -32,11 +32,25 @@ export default {
     inactive: {
       type: Boolean,
       default: false
+    },
+    circle: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
     classes() {
-      return { 'button--secondary': this.secondary && !this.tertiary, 'button--tertiary': !this.secondary && this.tertiary }
+      return {
+          'button--secondary': this.secondary && !this.tertiary,
+          'button--tertiary': !this.secondary && this.tertiary,
+          'button--icon': !this.name,
+          'rounded-full': !this.name && this.circle
+      }
+    }
+  },
+  methods: {
+    handleClick() {
+      this.$emit('onClick')
     }
   }
 }

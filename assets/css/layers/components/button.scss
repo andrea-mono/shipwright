@@ -37,4 +37,7 @@ button {
       @apply text-accents-01-inactive bg-transparent;
     }
   }
+  &.button--icon {
+      @apply p-2;
+  }
 }

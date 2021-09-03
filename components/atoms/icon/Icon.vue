@@ -1,5 +1,5 @@
 <template>
-  <object :data="`/svg/${dark ? 'dark' : 'light'}/${name}.svg`" class='text-alerts-success'></object>
+  <object :data="`/svg/${dark ? 'dark' : 'light'}/${name}.svg`" class='pointer-events-none'></object>
 </template>
 
 <script>
