@@ -1,9 +1,9 @@
 .toggle {
-  @apply bg-light-01-component w-14 h-7 border border-light-02-component rounded-full flex items-center cursor-pointer;
+  @apply bg-light-01-component dark:bg-dark-02-component w-16 h-8 border border-light-02-component dark:border-dark-02-component rounded-full flex items-center cursor-pointer;
 
   &--active {
     > .toggle__circle {
-      @apply bg-light-low-contrast ml-0 transform translate-x-7;
+      @apply bg-light-low-contrast dark:bg-dark-low-contrast transform translate-x-8;
     }
   }
 

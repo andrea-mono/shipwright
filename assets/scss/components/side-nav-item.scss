@@ -1,5 +1,5 @@
 .item {
-  @apply w-min py-2 pl-4 pr-12 flex items-center space-x-4 whitespace-nowrap;
+  @apply dark:text-light-high-contrast w-min py-2 pl-4 pr-12 flex items-center space-x-4 whitespace-nowrap;
 
   &--active {
     @apply text-light-01-component bg-accents-01-active rounded-full;
@@ -16,6 +16,6 @@
   }
 
   &__highlight {
-    @apply bg-accents-02-active w-2.5 h-2.5 rounded-full block transform translate-y-0.5;
+    @apply bg-accents-02-active w-2.5 h-2.5 rounded-full block;
   }
 }

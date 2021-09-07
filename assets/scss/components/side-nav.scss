@@ -1,0 +1,17 @@
+.side-nav {
+  @apply bg-light-01-component dark:bg-dark-01-component w-72 min-h-screen flex flex-col;
+
+  &__head {
+    @apply dark:text-dark-high-contrast p-6 flex items-center space-x-3;
+
+    &__label {
+      @apply text-xs uppercase;
+    }
+  }
+  &__items {
+    @apply p-6 space-y-4;
+  }
+  &__user {
+    @apply text-sm dark:text-dark-high-contrast py-10 px-6 border-t border-light-02-component dark:border-light-high-contrast mt-auto flex items-center space-x-4;
+  }
+}
