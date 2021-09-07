@@ -6,8 +6,10 @@
 </template>
 
 <script>
-import '../../../assets/css/layers/components/components.scss'
+import '../../../assets/scss/components/_components.scss'
+import '../../../assets/scss/objects/_objects.scss'
 import Icon from '../icon/Icon'
+import { computed } from '@vue/composition-api'
 
 export default {
   name: 'Button.vue',
@@ -42,21 +44,23 @@ export default {
       default: false
     }
   },
-  computed: {
-    classes() {
+  setup(props, {emit}) {
+    const classes = computed(() => {
       return {
-          'btn--secondary': this.secondary && !this.tertiary,
-          'btn--tertiary': !this.secondary && this.tertiary,
-          'btn--icon': !this.name,
-          'btn--rounded': !this.name && this.circle,
-          'btn--scalable': this.scalable,
+        'btn--secondary': props.secondary && !props.tertiary,
+        'btn--tertiary': !props.secondary && props.tertiary,
+        'btn--icon': !props.name,
+        'btn--rounded': !props.name && props.circle,
+        'btn--scalable': props.scalable,
       }
+    })
+
+    const handleClick = () => emit('onClick')
+
+    return {
+      classes,
+      handleClick
     }
   },
-  methods: {
-    handleClick() {
-      this.$emit('onClick')
-    }
-  }
 }
 </script>

@@ -53,10 +53,31 @@ module.exports = {
         'success': '#DFF0D8',
         'warning': '#FCF8E3',
         'info': '#B8D0EC',
+      },
+      alertsColors: {
+        'danger': '#DC3545',
+        'success': '#28A745',
+        'warning': '#FFC107',
+        'info': '#0066DD',
       }
     }),
     colors: {
-      '01-component': '#FFF',
+      light: {
+        'primary': '#F8FAFB',
+        '01-component': '#FFF',
+        '02-component': '#F9F9F9',
+        'high-contrast': '#364A59',
+        'medium-contrast': '#566976',
+        'low-contrast': '#ACBAC3',
+      },
+      dark: {
+        'primary': '#2E3438',
+        '01-component': '#111B22',
+        '02-component': '#383E42',
+        'high-contrast': '#FFF',
+        'medium-contrast': '#ACBAC3',
+        'low-contrast': '#566976',
+      },
       accents: {
         '01': {
           inactive: 'rgba(109, 205, 216, .8)',

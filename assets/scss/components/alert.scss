@@ -1,0 +1,24 @@
+.alert {
+  @apply w-1/2 p-4 rounded flex justify-between items-center;
+
+  &--danger {
+    @apply bg-alerts-danger;
+  }
+  &--warning {
+    @apply bg-alerts-warning;
+  }
+  &--success {
+    @apply bg-alerts-success;
+  }
+
+  &__inner {
+    @apply text-sm text-light-high-contrast flex gap-4;
+  }
+
+  &.fade-enter-active {
+    animation: fade 500ms linear;
+  }
+  &.fade-leave-active {
+    animation: fade 500ms linear reverse;
+  }
+}

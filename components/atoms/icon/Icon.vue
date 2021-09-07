@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import { ref } from '@vue/composition-api'
+
 export default {
   name: 'Icon',
   props: {
@@ -10,9 +12,14 @@ export default {
       type: String,
       required: false
     },
-    dark: {
-      type: Boolean,
-      default: false
+  },
+  setup() {
+    const dark = ref(null)
+
+    dark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    return {
+      dark
     }
   }
 }

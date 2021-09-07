@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "assets/scss/settings/settings";
+@import "assets/scss/tools/tools";
+@import "assets/scss/generic/generic";
+@import "assets/scss/elements/elements";
+@import "assets/scss/objects/objects";
+@import "components/components";
+@import "assets/scss/trumps/trumps";

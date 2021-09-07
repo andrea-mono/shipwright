@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import '../../../assets/css/layers/components/figure.scss'
+import { computed } from '@vue/composition-api'
 
 export default {
   name: 'Figure',
@@ -27,13 +27,17 @@ export default {
       default: false
     }
   },
-  computed: {
-    classes() {
+  setup(props) {
+    const classes = computed(() => {
       return {
-        'figure--circle': this.circle,
-        'figure--rounded': this.rounded,
-        [`figure--${this.size}`]: true,
+        'figure--circle': props.circle,
+        'figure--rounded': props.rounded,
+        [`figure--${props.size}`]: true,
       }
+    })
+
+    return {
+      classes
     }
   }
 }

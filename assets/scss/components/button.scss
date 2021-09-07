@@ -1,5 +1,5 @@
 .btn {
-  @apply text-sm text-01-component bg-accents-01-active py-2 px-6 rounded-sm flex items-center gap-x-2;
+  @apply text-sm text-light-01-component bg-accents-01-active py-2 px-6 rounded-sm flex items-center gap-x-2;
 
   &:hover {
     @apply bg-accents-01-hover transition;

@@ -1,4 +1,9 @@
-import '../assets/css/main.scss';
+import Vue from 'vue'
+import VueCompositionAPI from '@vue/composition-api'
+
+Vue.use(VueCompositionAPI)
+
+import '../assets/scss/main.scss';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

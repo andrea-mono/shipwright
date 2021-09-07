@@ -1,0 +1,37 @@
+.progress {
+  @apply flex flex-col items-center;
+
+  &__plate {
+    @apply w-full bg-light-01-component h-9 border border-light-low-contrast rounded-full overflow-hidden;
+  }
+  &__fill {
+    @apply h-full pl-2 pr-6 rounded-full flex items-center;
+
+    &--standard {
+      @apply bg-light-low-contrast;
+    }
+    &--active {
+      @apply bg-accents-02-active;
+    }
+    &--disabled {
+      @apply bg-light-low-contrast opacity-50;
+    }
+    &--success {
+      @apply bg-alertsColors-success;
+    }
+    &--warning {
+      @apply bg-alertsColors-warning;
+    }
+    &--error {
+      @apply bg-alertsColors-danger;
+    }
+
+    &__percentage {
+      @apply text-light-01-component ml-auto;
+    }
+  }
+
+  &__label {
+    @apply text-light-high-contrast;
+  }
+}

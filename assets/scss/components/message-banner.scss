@@ -1,0 +1,31 @@
+.message {
+  @apply bg-light-01-component dark:bg-dark-02-component w-1/2 pt-3 px-6 pb-4 rounded-md flex;
+
+  &__inner {
+    @apply flex-1;
+  }
+  &__icon {
+    @apply flex items-center pr-6;
+  }
+  &__head {
+    @apply flex justify-between;
+
+    &__title {
+      @apply text-xl text-light-high-contrast dark:text-dark-high-contrast;
+    }
+  }
+  &__content {
+    @apply text-light-medium-contrast dark:text-dark-medium-contrast;
+
+    &__list {
+      @apply list-disc pl-4;
+    }
+  }
+
+  &.fade-enter-active {
+    animation: fade 500ms linear;
+  }
+  &.fade-leave-active {
+    animation: fade 500ms linear reverse;
+  }
+}

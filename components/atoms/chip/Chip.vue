@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import '../../../assets/css/layers/components/chip.scss'
 import Icon from '../icon/Icon'
 
 export default {
